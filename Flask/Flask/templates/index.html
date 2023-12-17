@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+<body>
+    <center>
+        <div class="container-sm" style="margin-top:30px">
+            <h1>YouTube Transcript Summarizer</h1>
+        </div>
+        
+    <div class="container-sm" style="margin-top:60px">
+        
+    <form class='grid' action="/" method='Post'>
+        <div class="h-75 d-inline-block" style="width:750px; ">
+            <div class="mb-3" >
+               
+                <input type="text" class="form-control" id="link"placeholder="Enter link" name='link'>
+              </div>
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit" name='action1'value='VALUE1'>Get Summary</button>
+        </div>
+        <span></span>     
+    </div>
+    
+
+    <div class="mb-3" style="width:750px; ">
+        <div style="float: right; margin-bottom:20px;margin-top:50px;">
+            
+            <button type="submit" class="btn btn-outline-dark" id='Hindi' name='hindi' value ='hindi'>Hindi</button>
+            <button type="submit" class="btn btn-outline-dark" id='english' name='english' value='english'>English</button>
+            <button type="submit" class="btn btn-outline-dark" id='marathi' name='marathi' value='marathi'>Marathi</button>
+
+        </div>
+        
+        <span>
+
+        </span>
+        
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">{% if t1 %}{{t1}}{% endif %}</textarea>
+       
+      </div>
+      <div class="d-grid gap-2" style="width:750px; ">
+        <button class="btn btn-primary" type="submit" id='download' name='download' value='download'>Download Pdf</button>
+    </div>
+    </form>
+</center>
+</div>
+</body>
+</html>
